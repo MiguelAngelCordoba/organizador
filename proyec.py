@@ -1,5 +1,6 @@
 # Programa para administrar el tiempo cada dia
 
+import fun
 def run():
 
     actividades = {}
@@ -7,11 +8,12 @@ def run():
 
     for i in range(x):
         y = input(f"La actividad numero {i+1} que realizaste hoy es = ")
-        z = input("Cuanto tiempo en minutos utilizaste en esta actividad = ")
+        z = int(input("Cuanto tiempo en minutos utilizaste en esta actividad = "))
         actividades.update({y:z})
-    
-    print(actividades)
 
+    min_total = sum(actividades.values())
+    print(min_total)
+    fun.criterio(min_total)
 
 if __name__ == "__main__":
     run()
