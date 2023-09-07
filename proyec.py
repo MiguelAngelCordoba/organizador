@@ -13,7 +13,7 @@ def run():
 
     min_total = sum(actividades.values())
     print(min_total)
-    fun.criterio(min_total)
+    fun.criterio(min_total) 
 
 if __name__ == "__main__":
     run()
