@@ -4,7 +4,7 @@ import fun
 def run():
 
     actividades = {}
-    x = int(input("Cuantas actividades realizaste el dia dia de hoy = "))
+    x = int(input("/nCuantas actividades utiles realizaste el dia de hoy = "))
 
     for i in range(x):
         y = input(f"La actividad numero {i+1} que realizaste hoy es = ")
