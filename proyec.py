@@ -12,8 +12,10 @@ def run():
         actividades.update({y:z})
 
     min_total = sum(actividades.values())
-    print(min_total)
-    fun.criterio(min_total) 
+    fun.criterio(min_total)
+
+    if "estudiar" not in actividades :
+        print("\nNo has registrado tiempo a estudiar, recuerda que es la actividad mas importante") 
 
 if __name__ == "__main__":
     run()
